@@ -2,16 +2,51 @@
 <html>
 <head>
     <title>Product Page</title>
+    <style>
+        body {
+            display: flex;
+        }
+
+        .sidebar {
+            width: 200px;
+            background: lightgray;
+            padding: 10px;
+        }
+
+        .content {
+            padding: 20px;
+        }
+
+        .header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: black;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
 </head>
+
 <body>
 
-    <h1>My Product</h1>
+    <div class="header">
+        <h1>My Website</h1>
+    </div>
 
-    <img src="https://via.placeholder.com/150" alt="Product Image">
+    <div class="sidebar">
+        <h3>Menu</h3>
+        <p>Home</p>
+        <p>About</p>
+        <p>Contact</p>
+    </div>
 
-    <h2>Product Name: Smart Watch</h2>
-
-    <h3>Price: ₹1999</h3>
+    <div class="content">
+        <h2>Product Name: Smart Watch</h2>
+        <img src="https://via.placeholder.com/150">
+        <h3>Price: ₹1999</h3>
+    </div>
 
 </body>
 </html>
